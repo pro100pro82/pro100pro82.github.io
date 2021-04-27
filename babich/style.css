@@ -17,6 +17,18 @@ img {
 }
 
 /* Header */
+
+.header {
+  position: relative;
+  top: -200px;
+  opacity: 0;
+  transition: all .3s;
+  transition-duration: 1s;
+}
+body.is-load .header {
+  top: 0;
+  opacity: 1;
+}
 .header__container {
   display: flex;
   flex-direction: column;
