@@ -52,7 +52,7 @@ img {
   letter-spacing: 4px;
   transition-duration: .5s;
 }
-.nav__link:hover {
+.nav__link[href]:hover {
   color: rgba(134, 105, 255, 0.42);
 }
 
