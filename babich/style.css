@@ -2,7 +2,7 @@ body {
   width: 100%;
   margin: 0;
   color: #6b6b6b;
-  font-family: 'Didact Gothic', sans-serif;
+
 }
 
 img {
@@ -23,7 +23,7 @@ img {
   top: -200px;
   opacity: 0;
   transition: all .3s;
-  transition-duration: 1s;
+  transition-duration: 1.5s;
 }
 body.is-load .header {
   top: 0;
@@ -161,4 +161,36 @@ body.is-load .header {
 .footer__social .footer__title {
   text-align: right;
 }
+/* Form */
+.container__form {
+  display: flex;
+  align-items: stretch;
+  padding: 0 15px;
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: 'Playfair Display', serif;
+}
+.contact__item {
+  font-size: 28px;
+  margin-bottom: 50px;
+  letter-spacing: 4px;
 
+}
+.contact__title {
+  letter-spacing: 1px;
+ }
+.form__item {
+  font-size: 28px;
+  margin-bottom: 50px;
+  letter-spacing: 4px;
+}
+ .contact__list {
+   width: calc(50% - 20px);
+ }
+.container__form {
+  width: calc(50% - 20px);
+}
+.nam .mail {
+  width: 400px;
+  height: 45px;
+}
