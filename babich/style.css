@@ -88,6 +88,7 @@ body.is-load .header {
     text-align: center;
     font-family: 'Bitter', serif;
     margin-bottom: 50px;
+    color: black;
 }
 
 /* Gallery */
@@ -193,6 +194,7 @@ body.is-load .header {
 
 .contact__title {
     letter-spacing: 1px;
+    color: black;
 }
 
 .form__item {
@@ -227,4 +229,24 @@ body.is-load .header {
     height: 120px;
     resize: none;
     padding: 14px 15px;
+}
+.form__action {
+    letter-spacing: 2px;
+    font-weight: 600;
+    background-color: black;
+    border-radius: 30px;
+    border: 3px solid black;
+    font-size: 12px;
+    color: #e6e6e6;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 170px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    transition-duration: .5s;
+}
+.form__action:hover {
+    background-color: darkgrey;
+    border: 3px solid darkgrey;
 }
