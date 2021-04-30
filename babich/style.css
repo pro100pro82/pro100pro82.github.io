@@ -145,6 +145,7 @@ body.is-load .header {
     color: rgba(70, 69, 83, 1);
     transition-duration: .5s;
 }
+
 .footer__link:hover {
     font-size: 17px;
     color: #223afc;
@@ -230,6 +231,7 @@ body.is-load .header {
     resize: none;
     padding: 14px 15px;
 }
+
 .form__action {
     letter-spacing: 2px;
     font-weight: 600;
@@ -246,7 +248,65 @@ body.is-load .header {
     text-align: center;
     transition-duration: .5s;
 }
+
 .form__action:hover {
     background-color: darkgrey;
     border: 3px solid darkgrey;
 }
+/* Burger */
+.header__burger{
+    display: none;
+}
+@media (max-width:1023px) {
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+    .nav {
+        display: none;
+    }
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__inner {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.header__burger span {
+    position: absolute;
+    background-color: black;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    top: 9px;
+}
+.header__burger:before,
+.header__burger:after {
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+}
+.header__burger:before {
+    top: 0;
+}
+.header__burger:after {
+    bottom: 0;
+}
+
+/*
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}*/

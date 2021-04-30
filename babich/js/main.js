@@ -3,3 +3,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
   body.classList.add("is-load");
 })
+$(document).ready(function() {
+  $('.header__burger').click(function() {
+    $('.header__burger,.nav').toggleClass('active');
+  })
+})
