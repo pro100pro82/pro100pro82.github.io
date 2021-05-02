@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Студийная съёмка</title>
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -15,14 +16,22 @@
   <div class="container">
     <div class="header__container">
       <a href="index.html" class="header__logo">Nata Photo</a>
-      <nav class="nav">
-        <a class="nav__link" href="index.html">ИНДИВИДУАЛЬНАЯ СЪЕМКА</a>
-        <span class="nav__link active">СТУДИЙНАЯ СЪЕМКА</span>
-        <a class="nav__link" href="family.html">СЕМЕЙНАЯ СЪЕМКА</a>
-        <a class="nav__link" href="price.html">ЦЕНЫ</a>
-        <a class="nav__link" href="about.html">ОБО МНЕ</a>
-        <a class="nav__link" href="#">КОНТАКТЫ</a>
-      </nav>
+      <div class="header__burger js-menu-open">
+        <span></span>
+      </div>
+      <div class="menu menu js-menu">
+        <div class="close js-menu-close">
+          <div class="cross"></div>
+        </div>
+        <nav class="nav">
+          <a class="nav__link" href="index.html">ИНДИВИДУАЛЬНАЯ СЪЕМКА</a>
+          <span class="nav__link active">СТУДИЙНАЯ СЪЕМКА</span>
+          <a class="nav__link" href="family.html">СЕМЕЙНАЯ СЪЕМКА</a>
+          <a class="nav__link" href="price.html">ЦЕНЫ</a>
+          <a class="nav__link" href="about.html">ОБО МНЕ</a>
+          <a class="nav__link" href="contact.html">КОНТАКТЫ</a>
+        </nav>
+      </div>
     </div>
   </div>
 </header>

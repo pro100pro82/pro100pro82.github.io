@@ -259,10 +259,16 @@ body.is-load .header {
 .header__burger {
   display: none;
 }
+.close {
+  display: none;
+}
 
 @media (max-width: 1100px) {
   .container {
     max-width: 970px;
+  }
+  .header__logo {
+    margin-bottom: 0;
   }
   .header__burger {
     display: block;
@@ -274,6 +280,7 @@ body.is-load .header {
   .header__container {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
   .menu {
     position: fixed;
@@ -284,25 +291,39 @@ body.is-load .header {
     height: 100%;
     z-index: 999;
     transition: left .3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
    .menu.is-open {
      left: 0;
    }
 
-
   .menu.is-open .js-menu-close:before {
     content: "";
-  // задаем ему большой размер
   width: 100vw;
     height: 100vh;
-  // цвет какой хочешь
   background: rgba(0,0,0,.2);
-  // и задаем ему положение справа от меню
   position: absolute;
     top: 0;
     left: 100%;
   }
+  .close {
+    display: block;
+  }
+  .nav__link:not(:last-child):after {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .nav__link {
+    margin: 20px 0;
+  }
+
 }
 @media (max-width: 992px) {
   .container {
@@ -365,12 +386,11 @@ body.is-load .header {
   bottom: 0;
 }
 
-/*
-.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: aqua;
-}*/
+.cross {
+  background-image: url("images/close.svg");
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
