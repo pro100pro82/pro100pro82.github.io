@@ -271,18 +271,9 @@ body.is-load .header {
     height: 20px;
   }
 
-
-
   .header__container {
     display: flex;
     justify-content: space-between;
-  }
-
-
-}
-@media (max-width: 992px) {
-  .container {
-    max-width: 750px;
   }
   .menu {
     position: fixed;
@@ -294,6 +285,32 @@ body.is-load .header {
     z-index: 999;
     transition: left .3s;
   }
+
+// при клике на кнопку открытия меню на меню будет вешаться класс is-open на него и навешиваются стили открытого меню
+   .menu.is-open {
+     left: 0;
+   }
+
+// нужно предусмотреть клик за пределы меню(должно закрывать меню)
+
+  .menu.is-open .js-menu-close:before {
+    content: "";
+  // задаем ему большой размер
+  width: 100vw;
+    height: 100vh;
+  // цвет какой хочешь
+  background: rgba(0,0,0,.2);
+  // и задаем ему положение справа от меню
+  position: absolute;
+    top: 0;
+    left: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+
 }
 @media (max-width: 767px) {
   .container {
