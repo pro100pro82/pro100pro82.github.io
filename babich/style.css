@@ -43,6 +43,7 @@ body.is-load .header {
   border-width: 1px;
   border-color: #e6e6e6;
   padding-bottom: 30px;
+  position: relative;
 }
 
 .header__logo {
@@ -259,7 +260,7 @@ body.is-load .header {
   display: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .container {
     max-width: 970px;
   }
