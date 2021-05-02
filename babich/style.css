@@ -271,9 +271,7 @@ body.is-load .header {
     height: 20px;
   }
 
-  .nav {
-    display: none;
-  }
+
 
   .header__container {
     display: flex;
@@ -285,6 +283,16 @@ body.is-load .header {
 @media (max-width: 992px) {
   .container {
     max-width: 750px;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    background: #fff;
+    width: 320px;
+    height: 100%;
+    z-index: 999;
+    transition: left .3s;
   }
 }
 @media (max-width: 767px) {
